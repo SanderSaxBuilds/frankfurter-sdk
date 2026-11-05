@@ -1,0 +1,44 @@
+{
+  "name": "frankfurter-sdk-js",
+  "version": "0.0.1",
+  "description": "Unofficial generated JavaScript SDK for the Frankfurter public API. Not affiliated with or endorsed by the upstream API provider.",
+  "keywords": [
+    "sdk",
+    "generated-sdk",
+    "openapi",
+    "api-client",
+    "frankfurter"
+  ],
+  "homepage": "https://github.com/SanderSaxBuilds/frankfurter-sdk#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SanderSaxBuilds/frankfurter-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SanderSaxBuilds/frankfurter-sdk/issues"
+  },
+  "main": "src/FrankfurterSDK.js",
+  "type": "commonjs",
+  "files": [
+    "src",
+    "README.md",
+    "REFERENCE.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "test-some": "node -e \"const p = process.env.npm_config_pattern || process.env.TEST_PATTERN; const r = require('child_process').spawnSync(process.execPath, ['--experimental-test-isolation=none', ...(p ? ['--test-name-pattern=' + p] : []), '--test', 'test/**/*.test.js'], { stdio: 'inherit' }); process.exit(r.status ?? 1)\"",
+    "test-utility": "node --test \"test/utility/*.test.js\"",
+    "clean": "node -e \"for (const p of process.argv.slice(1)) require('fs').rmSync(p, { recursive: true, force: true })\" node_modules yarn.lock package-lock.json",
+    "reset": "npm run clean && npm i && npm test"
+  },
+  "author": {
+    "name": "Alexandr Khrustalev",
+    "url": "https://github.com/SanderSaxBuilds"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "peerDependencies": {},
+  "devDependencies": {
+    "dotenv": "^17.4.2"
+  }
+}

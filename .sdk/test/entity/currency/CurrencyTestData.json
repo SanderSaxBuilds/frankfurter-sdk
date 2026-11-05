@@ -1,0 +1,65 @@
+{
+  "existing": {
+    "currency": {
+      "CURRENCY00": {
+        "end_date": "s50",
+        "iso_code": "s51",
+        "iso_numeric": "s52",
+        "name": "s53",
+        "peg": {},
+        "providers": [],
+        "start_date": "s56",
+        "symbol": "s57",
+        "id": "CURRENCY00"
+      },
+      "CURRENCY01": {
+        "end_date": "sa0",
+        "iso_code": "sa1",
+        "iso_numeric": "sa2",
+        "name": "sa3",
+        "peg": {},
+        "providers": [],
+        "start_date": "sa6",
+        "symbol": "sa7",
+        "id": "CURRENCY01"
+      },
+      "CURRENCY02": {
+        "end_date": "sf0",
+        "iso_code": "sf1",
+        "iso_numeric": "sf2",
+        "name": "sf3",
+        "peg": {},
+        "providers": [],
+        "start_date": "sf6",
+        "symbol": "sf7",
+        "id": "CURRENCY02"
+      }
+    }
+  },
+  "new": {
+    "currency": {
+      "currency_ref01": {
+        "end_date": "s140",
+        "iso_code": "s141",
+        "iso_numeric": "s142",
+        "name": "s143",
+        "peg": {},
+        "providers": [],
+        "start_date": "s146",
+        "symbol": "s147"
+      }
+    }
+  },
+  "requests": {
+    "GET /currencies": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /currency/{code}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}

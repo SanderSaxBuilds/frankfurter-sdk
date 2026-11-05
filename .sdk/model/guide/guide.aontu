@@ -1,0 +1,22 @@
+# Guide
+
+@"@voxgig/apidef/model/guide.aontu"
+
+@"./base-guide.aontu"
+
+
+
+
+
+# Frankfurter identifies currencies by iso_code and providers by key.
+guide: entity: currency: id: from: id: "iso_code"
+guide: entity: provider: id: from: id: "key"
+
+# Keep the API's plural query names. The default singular `provider` collides
+# with the {provider} path parameter on the rate entity, and sends a
+# comma-separated list down the wrong route.
+guide: entity: coverage: path: "/coverage": rename: query: { providers: "providers", quotes: "quotes" }
+guide: entity: currency: path: "/currencies": rename: query: { providers: "providers" }
+guide: entity: rate: path: "/rates": rename: query: { providers: "providers", quotes: "quotes" }
+guide: entity: rate: path: "/rate/{base}/{quote}": rename: query: { providers: "providers" }
+guide: entity: rate: path: "/providers/{provider}/rates": rename: query: { quotes: "quotes" }
