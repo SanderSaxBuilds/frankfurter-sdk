@@ -1,0 +1,89 @@
+{
+  "existing": {
+    "provider": {
+      "PROVIDER00": {
+        "country_code": "s8c",
+        "currencies": [],
+        "data_url": "s8e",
+        "end_date": "s8f",
+        "frequency": "s90",
+        "key": "s91",
+        "name": "s92",
+        "pivot_currency": "s93",
+        "publish_cadence": "s94",
+        "publishes_missed": "s95",
+        "rate_type": "s96",
+        "start_date": "s97",
+        "terms_url": "s98",
+        "unknown_currencies": [],
+        "id": "PROVIDER00"
+      },
+      "PROVIDER01": {
+        "country_code": "s118",
+        "currencies": [],
+        "data_url": "s11a",
+        "end_date": "s11b",
+        "frequency": "s11c",
+        "key": "s11d",
+        "name": "s11e",
+        "pivot_currency": "s11f",
+        "publish_cadence": "s120",
+        "publishes_missed": "s121",
+        "rate_type": "s122",
+        "start_date": "s123",
+        "terms_url": "s124",
+        "unknown_currencies": [],
+        "id": "PROVIDER01"
+      },
+      "PROVIDER02": {
+        "country_code": "s1a4",
+        "currencies": [],
+        "data_url": "s1a6",
+        "end_date": "s1a7",
+        "frequency": "s1a8",
+        "key": "s1a9",
+        "name": "s1aa",
+        "pivot_currency": "s1ab",
+        "publish_cadence": "s1ac",
+        "publishes_missed": "s1ad",
+        "rate_type": "s1ae",
+        "start_date": "s1af",
+        "terms_url": "s1b0",
+        "unknown_currencies": [],
+        "id": "PROVIDER02"
+      }
+    }
+  },
+  "new": {
+    "provider": {
+      "provider_ref01": {
+        "country_code": "s230",
+        "currencies": [],
+        "data_url": "s232",
+        "end_date": "s233",
+        "frequency": "s234",
+        "key": "s235",
+        "name": "s236",
+        "pivot_currency": "s237",
+        "publish_cadence": "s238",
+        "publishes_missed": "s239",
+        "rate_type": "s23a",
+        "start_date": "s23b",
+        "terms_url": "s23c",
+        "unknown_currencies": []
+      }
+    }
+  },
+  "requests": {
+    "GET /providers": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    },
+    "GET /providers/{provider}": {
+      "provenance": "operation-contract",
+      "version": 2,
+      "source": "openapi3"
+    }
+  }
+}
