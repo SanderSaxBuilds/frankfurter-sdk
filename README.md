@@ -71,7 +71,7 @@ print(rate.data_get())
 | JavaScript | `cd js && npm install && npm test` | 229 passed, 0 failed, 12 skipped |
 | Python | `cd py && pip install . pytest && pytest test/` | 223 passed, 93 skipped |
 
-Skipped tests belong to optional generator features this SDK does not use. Set `FRANKFURTER_TEST_LIVE=TRUE` to run the live tests against the real API.
+Skipped tests are optional generator features this SDK does not use, plus one Python type check that needs mypy. Set `FRANKFURTER_TEST_LIVE=TRUE` to run the live tests against the real API.
 
 ## Known limits
 
